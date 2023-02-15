@@ -1,4 +1,5 @@
 ---
+const {href} = Astro.props;
 ---
 
 <style>
@@ -48,7 +49,7 @@
 <div class="feature-card__card">
     <div class="featured-card__content">  
       <div class="circle">
-        <iframe width='100%' height='100%' src="https://api.mapbox.com/styles/v1/greidy3/cle0nw44q004401oab9sazmim.html?title=false&access_token=pk.eyJ1IjoiZ3JlaWR5MyIsImEiOiJjbGUwbmt6YTQxY3JhM3FtamVkZTcxZ3NmIn0.RN-kwQzvocsDqJL9N71Bsg&zoomwheel=false#11.66/50.5694/-126.7861" title="Outdoors" style="border:none;"></iframe>
+        <iframe width='100%' height='100%' src={href} title="Outdoors" style="border:none;"></iframe>
     </div>
     </div>
 </div> 
