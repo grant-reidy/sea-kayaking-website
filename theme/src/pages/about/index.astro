@@ -1,0 +1,100 @@
+---
+import { TextSection } from '@littlesticks/odyssey-theme-components';
+import Layout from '../../layouts/Page.astro';
+import HeroSection from '../../components/sections/heros/HeroSection.astro';
+import {
+  AnnouncementBar,
+	Button,
+	CustomerQuoteSection,
+	ThreeColumnTextSection,
+	YouTubeEmbedSection,
+  StickyTextImageSection,
+  CtaCardSection
+} from '@littlesticks/odyssey-theme-components';
+import { Icon } from 'astro-icon';
+
+const seo = {
+	title: 'About | ORGT Sea Kayaking',
+	description: 'About Page',
+};
+---
+
+<Layout {seo}>
+	<HeroSection>
+		<div slot="text-container">
+			<h1>About</h1>
+			<p>
+				Sea Kayaking is a sub-organization of 
+        <a href="https://crc.gatech.edu/outdoor/adventure-trips">Outdoor Recreation Georgia Tech (ORGT)</a> 
+        dedicated to facilitating enriching paddling experiences to Georgia Tech students.
+			</p>
+		</div>
+    <picture slot="image-container">
+      <img
+        src="/assets/images/paddle.png"
+        alt="Astro Odyssee"
+        id="home-hero-image"
+      />
+    </picture>
+	</HeroSection>
+  <StickyTextImageSection>
+		<section class="feature-card__section">
+			
+		</section>
+		<div slot="text-container">
+			<h2>Vice President</h2>
+			<p></p>
+		<h3>Taylor Sherwood</h3>
+		  <p>
+        Taylor Sherwood is a fun-loving, goofy kid who always knows how to put a smile on everyone's face. With a contagious energy and a heart of gold, Taylor approaches life with a lightheartedness that is both refreshing and endearing. Whether he's telling jokes, dancing around, or simply being his autistic self, Taylor's presence brightens up any room he enters
+		  </p>
+		</div>
+		 <picture slot="image-container">
+		  <img
+			src="/assets/images/about/sherwood-headshot.png"
+			alt="Taylor Sherwood"
+			loading="lazy"
+		  />
+		</picture>
+	  </StickyTextImageSection>
+    <StickyTextImageSection>
+      <section class="feature-card__section">
+        
+      </section>
+      <div slot="text-container">
+        <h2>Gear Chair</h2>
+        <p></p>
+      <h3>Grant Reidy</h3>
+        <p>
+        Stealing ur mom.
+        </p>
+      </div>
+       <picture slot="image-container">
+        <img
+        src="/assets/images/about/reidy-headshot.png"
+        alt="Grant Reidy"
+        loading="lazy"
+        />
+      </picture>
+      </StickyTextImageSection>
+      <StickyTextImageSection>
+        <section class="feature-card__section">
+          
+        </section>
+        <div slot="text-container">
+          <h2>Training Chair</h2>
+          <p></p>
+        <h3>Jackson Moody</h3>
+          <p>
+          Looking sexy as always.
+          </p>
+        </div>
+         <picture slot="image-container">
+          <img
+          src="/assets/images/about/moody-headshot.png"
+          alt="Jackson Moody"
+          loading="lazy"
+          />
+        </picture>
+        </StickyTextImageSection>
+</Layout>

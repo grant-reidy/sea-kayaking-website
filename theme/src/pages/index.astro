@@ -1,0 +1,90 @@
+---
+import { Container } from '@littlesticks/odyssey-theme-components';
+import FeatureCard from "../components/sections/heros/FeatureCard.astro"
+import MapCard from "../components/sections/heros/MapCard.astro"
+import Layout from '../layouts/Page.astro';
+import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro';
+import { CtaCardSection, Button} from '@littlesticks/odyssey-theme-components';
+import { Icon } from 'astro-icon';
+---
+
+<Layout>
+	<HomeHeroSection/>
+	<Container>
+		<section class="feature-card__section">
+			<h2 class="link"><a style="text-decoration: none;" href="/ip-trips">IP Trips</a></h2>
+			<p>
+				Kayaking trips over weekends and during breaks during the academic year. 
+			</p>
+			<div class="feature-card__grid">
+				<FeatureCard href="/ip-trips/nc-lakes" title="North Carolina Lakes" imgSrc="/assets/images/home/ip-trips/nc-lakes/nc-lakes">
+				</FeatureCard>
+				<FeatureCard href="/ip-trips/okefenokee" title="Okefenokee Swamp" imgSrc="/assets/images/home/ip-trips/okefenokee/okefenokee">
+				</FeatureCard>
+			</div>
+		</section>
+	</Container>
+
+	<CtaCardSection background="var(--theme-primary-hover)" color="var(--theme-on-primary)">
+		<h2>Antarctica 2023 Expedition Applications Now Open!</h2>
+		<Button customIcon>Apply
+			<Fragment slot="icon">
+			  <Icon name="ic:baseline-launch" />
+			</Fragment>
+		</Button>
+	</CtaCardSection>
+	<Container>
+		<section class="feature-card__section">
+			<h2 class="link"><a style="text-decoration: none;" href="/expeditions">Upcoming & Recent Expeditions</a></h2>
+			<p>
+				World-class expeditions made availible to Georgia Tech students. 
+			</p>
+			<div class="feature-card__grid">
+				<FeatureCard
+					href="/expeditions/antarctica"
+					imgSrc="/assets/images/home/expeditions/antarctica/Antarctica_2023"
+					title="Antarctica"
+				>
+				</FeatureCard>
+				<FeatureCard
+					href="/expeditions/greenland"
+					imgSrc="/assets/images/home/expeditions/greenland/Greenland_2023"
+					title="Greenland"
+				>
+				</FeatureCard>
+				<FeatureCard
+					href="/expeditions/british-columbia"
+					imgSrc="/assets/images/home/expeditions/british_columbia/British_Columbia_2022"
+					title="British Columbia"
+				>
+				</FeatureCard>
+				<FeatureCard
+					href="/expeditions/antarctica-2018"
+					imgSrc="/assets/images/home/expeditions/antarctica-2018/Antarctica_2018"
+					title="British Columbia"
+				>
+				</FeatureCard>
+			</div>
+		</section>
+	</Container>
+</Layout>
+
+<style>
+	.feature-card__section {
+		margin: var(--section-margin) auto;
+	}
+	.feature-card__grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: var(--theme-grid-gap);
+	}
+	@media (max-width: 768px) {
+		.feature-card__grid {
+			grid-template-columns: 1fr;
+		}
+	}
+	.link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+</style>

@@ -1,0 +1,154 @@
+---
+import {Icon} from 'astro-icon'
+import {
+  AnnouncementBar,
+	Button,
+	CustomerQuoteSection,
+	ThreeColumnTextSection,
+	YouTubeEmbedSection,
+  StickyTextImageSection,
+  CtaCardSection
+} from '@littlesticks/odyssey-theme-components';
+import { Container } from '@littlesticks/odyssey-theme-components';
+import MapCard from "../../components/sections/heros/MapCard.astro"
+import FeatureCard from "../../components/sections/heros/FeatureCard.astro"
+import Layout from '../../layouts/Page.astro';
+import TextAndImageHero from '../../components/sections/heros/TextAndImageHero.astro';
+
+const seo = {
+	title: 'Expeditions | ORGT Sea Kayaking',
+	description: 'Sea Kayaking expeditions open to sea kayaking staff',
+};
+---
+
+<AnnouncementBar text="Antarctica 2023 Expedition Applications Now Open!" href="" slot="announcement-bar"/>
+<Layout seo={seo} >
+	<TextAndImageHero reversed>
+		<div slot="text-container">
+			<h1>Sea Kayaking Expeditions</h1>
+			<p>Paddle your way to adventure and discovery.</p>
+		</div>
+		<picture slot="image-container">
+			<img
+				src="/assets/images/home/expeditions/Expedition_Cover.png"
+				alt="Antarctica Expedition Cover Image"
+				id="expedition-cover-image"
+			/>
+		</picture>
+	</TextAndImageHero>
+
+	<CustomerQuoteSection
+		quoteText="This trip was cool ngl"
+		customerName="John Traendly"
+	/>
+
+	<ThreeColumnTextSection>
+		<div slot="column-1-body">
+			<h2>Title1</h2>
+			<p>
+				Bruh
+			</p>
+		</div>
+		<Button slot="column-1-cta">Learn More</Button>
+		<div slot="column-2-body">
+			<h2>Title2</h2>
+			<p>
+				Bruh
+			</p>
+		</div>
+		<Button slot="column-2-cta" outlined>Learn More</Button>
+		<div slot="column-3-body">
+			<h2>IDK</h2>
+			<p>
+				Bruh
+			</p>
+		</div>
+		<Button slot="column-3-cta">Learn More</Button>
+	</ThreeColumnTextSection>
+
+	<StickyTextImageSection>
+		<section class="feature-card__section">
+			
+		</section>
+		<div slot="text-container">
+			<h2>Featured: British Columbia</h2>
+			<p></p>
+		<h3>About</h3>
+		  <p>
+			In August 2022, a team of five Georgia Tech students accompanied by 
+			John Traendly and Todd Hyatt spent nine days paddling 
+			and primitive camping on the Northeast coast of Vancouver Island 
+			and the west coast of British Columbia, Canada.
+		  </p>
+		  <h3>Where</h3>
+			<p>
+				Broughton Archipelago Park, B.C.'s largest marine park, 
+				consists of a wonderful collection of dozens of undeveloped 
+				islands and islets situated at the mouth of Knight Inlet 
+				on the west side of Queen Charlotte Strait near the north end of Vancouver Island.
+		  </p>
+		</div>
+		 <picture slot="image-container">
+		  <img
+			src="/assets/images/home/expeditions/british_columbia/bc_group.png"
+			alt="Astro Odyssey"
+			loading="lazy"
+		  />
+		</picture>
+	  </StickyTextImageSection>
+	<Container>
+		<MapCard></MapCard>
+	</Container>
+	<Container>
+		<section class="feature-card__section">
+			<h2><a style="text-decoration: none;" href="/ip-trips">All Expeditions</a></h2>
+			<p>
+				World-class expeditions made availible to Georgia Tech students. 
+			</p>
+			<div class="feature-card__grid">
+				<FeatureCard
+					href="/expeditions/antarctica"
+					imgSrc="/assets/images/home/expeditions/antarctica/Antarctica_2023"
+					title="Antarctica"
+				>
+				</FeatureCard>
+				<FeatureCard
+					href="/expeditions/greenland"
+					imgSrc="/assets/images/home/expeditions/greenland/Greenland_2023"
+					title="Greenland"
+				>
+				</FeatureCard>
+				<FeatureCard
+					href="/expeditions/british-columbia"
+					imgSrc="/assets/images/home/expeditions/british_columbia/British_Columbia_2022"
+					title="British Columbia"
+				>
+				</FeatureCard>
+				<FeatureCard
+					href="/expeditions/antarctica-2018"
+					imgSrc="/assets/images/home/expeditions/antarctica-2018/Antarctica_2018"
+					title="British Columbia"
+				>
+				</FeatureCard>
+			</div>
+		</section>
+	</Container>
+
+
+</Layout>
+
+<style>
+	.feature-card__section {
+		margin: var(--section-margin) auto;
+	}
+	.feature-card__grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: var(--theme-grid-gap);
+	}
+	@media (max-width: 768px) {
+		.feature-card__grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>
