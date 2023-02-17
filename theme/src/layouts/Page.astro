@@ -21,7 +21,7 @@ const { seo } = Astro.props as Props;
 		<span slot="logo">
 			<!-- <Logo /> -->
 		</span>
-		<!-- <Button slot="action-item" href="https://www.gatech.edu">Georgia Tech</Button> -->
+		<!-- <Button slot="action-item" href="/about/meetings">Meetings</Button> -->
 	</Header>
 	<div id="page">
 		<slot />
@@ -35,6 +35,6 @@ const { seo } = Astro.props as Props;
 		copyrightName={settings.name}
     	showLittleSticksPlug={settings.showLittleSticksPlug}
 	>
-		<Logo slot="logo" />
+		<Logo href="/" slot="logo" />
 	</Footer>
 </Layout>

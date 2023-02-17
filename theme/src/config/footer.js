@@ -37,8 +37,8 @@ export const footerLists = [
 		title: 'Expeditions',
 		items: [
 			{
-				title: 'Antarctica',
-				slug: '/expeditions/antarctica',
+				title: 'Antarctica 2023',
+				slug: '/expeditions/antarctica-2023',
 			},
 			{
 				title: 'Greenland',
@@ -49,12 +49,16 @@ export const footerLists = [
 				slug: '/expedtiions/british-columbia',
 			},
 			{
-				title: 'Yukon Territory',
-				slug: '/expeditions/yukon-territory'
+				title: 'Chile 2019',
+				slug: '/expedtiions/chile-2019',
 			},
 			{
-				title: 'Chile',
-				slug: '/expedtions/chile'
+				title: 'Antarctica 2018',
+				slug: '/expeditions/antarctica-2018'
+			},
+			{
+				title: 'Costa Rica',
+				slug: '/expeditions/costa-rica'
 			}
 		],
 	},

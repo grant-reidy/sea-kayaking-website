@@ -9,6 +9,7 @@ import {
 	ThreeColumnTextSection,
 	YouTubeEmbedSection,
   StickyTextImageSection,
+  Container,
   CtaCardSection
 } from '@littlesticks/odyssey-theme-components';
 import { Icon } from 'astro-icon';
@@ -20,20 +21,22 @@ const seo = {
 ---
 
 <Layout {seo}>
-  <StickyTextImageSection>
-		<section class="feature-card__section">
-			
-		</section>
-		<div slot="text-container">
+  <Container>
 			<h1>About</h1>
 			<p>
-				Sea Kayaking is a sub-organization of 
-        <a href="https://crc.gatech.edu/outdoor/adventure-trips">Outdoor Recreation Georgia Tech (ORGT)</a> 
-        dedicated to facilitating enriching paddling experiences for Georgia Tech students.
+				Sea Kayaking, one of the nine sport communities affiliated with 
+        <a href="https://crc.gatech.edu/outdoor/adventure-trips">Outdoor Recreation Georgia Tech (ORGT)</a>, 
+        enables Georgia Tech students to participate in and lead enriching paddling experiences across the world. 
 			</p>
+      <p>With support from full-time Georgia Tech Campus Recreation Center (CRC) staff, 
+        Sea Kayaking is run by a team of student volunteers tasked with leading open-enrollment 
+        instructional programs (IPs), organizing sport logistics, and providing training opportunities 
+        for current staff.</p>
+        <p>Sea Kayaking offers many ways for students to get involved, including weekly sport community meetings, 
+          roll schools, IP trips, and expeditions. Leadership opportunities are also available 
+          through volunteer staff progression and sport officer positions. </p>
       <Button href="/about/meetings">Meetings</Button>
-		</div>
-	  </StickyTextImageSection>
+  </Container>
   <StickyTextImageSection>
 		<section class="feature-card__section">
 			
@@ -43,10 +46,10 @@ const seo = {
 			<p></p>
 		<h3>Taylor Sherwood</h3>
 		  <p>
-        Hey I'm Taylor, I'm an undergraduate Civil Engineering and Spanish student. I'm originally from Milledgeville, Georgia, and 
-        I assumed the position of Vice President in 2023. I am an Expedition Leader for the <a href="/expeditions/greenland">Greenland Expedition</a> 
-        as well as the <a href="/expeditions/antarctica-2023">Antarctica Expedition</a>. It has been my goal as VP to pioneer expeditions to new countries around the globe, 
-        and to expand the reach of Sea Kayaking to Georgia Tech students.
+        Hi, I'm Taylor! I'm originally from Milledgeville, Georgia, and I study Civil Engineering and Spanish as an undergraduate student here at Georgia Tech. 
+        I'm currently serving as this year's Sea Kayaking Vice President, and am an Expedition Leader for both international expeditions in 2023, 
+        the <a href="/expeditions/greenland">Greenland Expedition</a> as well as the <a href="/expeditions/antarctica-2023">Antarctica Expedition</a>. I'm excited to help provide more incredible 
+        paddling opportunities to the Georgia Tech community!
 		  </p>
       <p>Email: <a href="mailto:tsherwood6@gatech.edu">tsherwood6@gatech.edu</a></p>
 		</div>
@@ -70,7 +73,7 @@ const seo = {
           Hi, I'm John. I'm a Georgia Tech alumnus, ME 1968 and MS IE 1973, and have been mentoring in the Sea 
           Kayaking program since 2012. I am an <a target="_blank" href="https://americancanoe.org/">American Canoe Association</a> Level 5 Instructor and a Level 3 
           Instructor Trainer. I have been fortunate to have staffed over 160 <a href="/ip-trips">IP trips</a> and been on all of 
-          the <a href="/expeditions">Sea Kayaking expeditions</a>. Prior to kayaking, I was an IT and logistics executive, entrepreneur and Marine. 
+          the <a href="/expeditions">Sea Kayaking expeditions</a>. Prior to kayaking, I was an IT and logistics executive, entrepreneur and United States Marine. 
           I'm looking forward to some great new adventures in the Sea Kayaking program.
         </p>
         <p>Email: <a href="mailto:traendj@bellsouth.net">traendj@bellsouth.net</a></p>
@@ -92,8 +95,8 @@ const seo = {
         <p></p>
       <h3>Grant Reidy</h3>
         <p>
-          Hi I'm Grant, I'm an undergraduate Computer Science student. I'm originally from Jacksonville, Florida, 
-          and I have been kayaking for over 8 years of my life already. I've been working with ORGT Sea Kayaking since 2021, 
+          Hi, I'm Grant. I'm an undergraduate Computer Science student. I'm originally from Jacksonville, Florida, and I enjoyed kayaking along 
+          the St. Johns River before coming to Atlanta. I've been working with ORGT Sea Kayaking since 2021, 
           and I was a participant on the <a href="/expeditions/british-columbia">British Columbia Expedition</a> in August 2022. 
           I am an Expedition Leader for the <a href="/expeditions/greenland">Greenland Expedition</a>, as well as the 
           <a href="/expeditions/antarctica-2023">Antarctica Expedition</a>. I recommend joining Sea Kayaking 
