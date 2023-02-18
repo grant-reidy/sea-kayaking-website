@@ -1,0 +1,190 @@
+---
+import {Icon} from 'astro-icon'
+import {
+  AnnouncementBar,
+	Button,
+	Container,
+	CustomerQuoteSection,
+	ThreeColumnTextSection,
+	YouTubeEmbedSection,
+  StickyTextImageSection,
+  CtaCardSection
+} from '@littlesticks/odyssey-theme-components';
+import MapCard from "../../components/sections/heros/MapCard.astro"
+import FeatureCard from "../../components/sections/heros/FeatureCard.astro"
+import Layout from '../../layouts/Page.astro';
+import TextAndImageHero from '../../components/sections/heros/TextAndImageHero.astro';
+
+const seo = {
+	title: 'Greenland | Sea Kayaking',
+	description: 'Sea Kayaking expeditions open to sea kayaking staff',
+};
+---
+
+<Layout seo={seo} >
+	<TextAndImageHero reversed>
+		<div slot="text-container">
+			<h1>Greenland</h1>
+			<p>Eleven days including paddling, hiking and camping in southeast Greenland, just below the Arctic Circle.</p>
+		</div>
+		<div slot="btns-container">
+			<!-- <Button href="/theme/get-started" customIcon
+				>Get Started <Fragment slot="icon">
+          <Icon name="ic:baseline-chevron-right"/>
+        </Fragment></Button
+			> -->
+		</div>
+		<picture slot="image-container">
+			<img
+				src="/assets/images/home/expeditions/greenland/greenland-main-cover.png"
+				alt="Greenland Cover"
+				id="home-hero-image"
+			/>
+		</picture>
+	</TextAndImageHero>
+  <StickyTextImageSection>
+    <div slot="text-container">
+		<h2>About</h2>
+		<p>
+			The team will travel primarily by kayak throughout the region, camping at multiple locations along the route 
+			and hiking to explore areas near campsites. The proposed routes will include visits to local villages and 
+			historical sites. The total paddling distance of the expedition will vary depending on 
+			local weather and ice conditions, but the trip will likely average 15 miles per day at a 3 mph pace 
+			with fully loaded kayaks. Potential sights include: humpback whales, narwals, polar bears, icebergs, 
+			historic Inuit sites, and more.
+		</p>
+		<FeatureCard
+					imgSrc="/assets/images/home/expeditions/greenland/greenland-tents"
+					title="Greenland Tents"
+				>
+		</FeatureCard>
+		<br>
+		<h2>Team</h2>
+		<p>We selected individuals who possess the necessary physical fitness, commitment to the outdoors,
+			and ability to handle the potentially challenging weather and environmental conditions possibly 
+			encountered on the expedition. Training and preparedness are essential. Along with regular training trips,
+			educational opportunties have been made available on chart reading, cold weather survival, and first aid.</p>
+		<StickyTextImageSection>
+			<div slot="text-container">
+				<h2>Taylor Sherwood</h2>
+				<h4>Expedition Leader</h4>
+				<p>BE Civil Engineering <br>
+					BA Spanish</p>
+				<p><b>Hometown:</b><br>Milledgeville, Georgia <br></p>
+			</div>
+			<picture slot="image-container">
+				<img
+				src="/assets/images/about/sherwood-headshot-2.png"
+				alt="Taylor Sherwood Greenland"
+				loading="lazy"
+				/>
+			  </picture>
+		</StickyTextImageSection>
+		<StickyTextImageSection>
+			<div slot="text-container">
+				<h2>Grant Reidy</h2>
+				<h4>Expedition Leader</h4>
+				<p>BS Computer Science<br></p>
+				<p><b>Hometown:</b><br>Jacksonville, Florida<br></p>
+			</div>
+			<picture slot="image-container">
+				<img
+				src="/assets/images/about/reidy-headshot.png"
+				alt="Grant Reidy"
+				loading="lazy"
+				/>
+			  </picture>
+		</StickyTextImageSection>
+		<StickyTextImageSection>
+			<div slot="text-container">
+				<h2>John Traendly</h2>
+				<h4>Mentor</h4>
+				<p>BE Mechanical Engineering<br>MS Industrial Engineering</p>
+				<p><b>Hometown:</b><br>Atlanta, Georiga<br></p>
+			</div>
+			<picture slot="image-container">
+				<img
+				src="/assets/images/about/traendly-headshot.png"
+				alt="Grant Reidy"
+				loading="lazy"
+				/>
+			  </picture>
+		</StickyTextImageSection>
+		<StickyTextImageSection>
+			<div slot="text-container">
+				<h2>Abigail Diering</h2>
+				<p>Chemistry Graduate Student<br></p>
+				<p><b>Hometown:</b><br>Denver, Colorado<br></p>
+			</div>
+			<picture slot="image-container">
+				<img
+				src="/assets/images/about/diering-headshot.png"
+				alt="Abigail Diering"
+				loading="lazy"
+				/>
+			  </picture>
+		</StickyTextImageSection>
+		<StickyTextImageSection>
+			<div slot="text-container">
+				<h2>Chad Pozarycki</h2>
+				<p>Chemistry Graduate Student<br></p>
+				<p><b>Hometown:</b><br>Oakland, New Jersey<br></p>
+			</div>
+			<picture slot="image-container">
+				<img
+				src="/assets/images/about/chad-headshot.png"
+				alt="Chad Pozarycki"
+				loading="lazy"
+				/>
+			  </picture>
+		</StickyTextImageSection>
+		<StickyTextImageSection>
+			<div slot="text-container">
+				<h2>Jackson Moody</h2>
+				<p>Electrical Engineering Graduate Student<br></p>
+				<p><b>Hometown:</b><br>Memphis, Tennessee<br></p>
+			</div>
+			<picture slot="image-container">
+				<img
+				src="/assets/images/about/moody-headshot.png"
+				alt="Jackson Moody"
+				loading="lazy"
+				/>
+			  </picture>
+		</StickyTextImageSection>
+		<StickyTextImageSection>
+			<div slot="text-container">
+				<h2>Miranda Ward</h2>
+				<p>BE Areospace Engineering<br></p>
+				<p><b>Hometown:</b><br>Johns Creek, Georgia<br></p>
+			</div>
+			<picture slot="image-container">
+				<img
+				src="/assets/images/about/ward-headshot.png"
+				alt="Miranda Ward"
+				loading="lazy"
+				/>
+			  </picture>
+		</StickyTextImageSection>
+		<FeatureCard
+					imgSrc="/assets/images/home/expeditions/greenland/greenland-travel"
+					title="Greenland Travel"
+				>
+		</FeatureCard>
+    </div>
+     <picture slot="image-container">
+		
+		<MapCard title="Ammassalik Fjord"
+		href="https://api.mapbox.com/styles/v1/greidy3/cle90p4ml000j01nxqdu689tp.html?title=false&access_token=pk.eyJ1IjoiZ3JlaWR5MyIsImEiOiJjbGUwbmt6YTQxY3JhM3FtamVkZTcxZ3NmIn0.RN-kwQzvocsDqJL9N71Bsg&zoomwheel=false#8.78/65.7788/-37.564/0/0">
+		</MapCard>
+    </picture>
+  </StickyTextImageSection>
+  <YouTubeEmbedSection url="https://www.youtube.com/watch?v=d8Xl7kPA-5k" rounded />
+  <br>
+	
+	
+
+  
+
+</Layout>
+
