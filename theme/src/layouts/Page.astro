@@ -18,6 +18,19 @@ const { seo } = Astro.props as Props;
 ---
 
 <Layout seo={seo}>
+	<!-- Google tag (gtag.js) -->
+	<script
+  		type="text/partytown"
+  		src="https://www.googletagmanager.com/gtag/js?id=G-HS582VQYJJ">
+	</script>
+	<script type="text/partytown">
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag() {
+    	dataLayer.push(arguments);
+  	}
+  	gtag("js", new Date());
+  	gtag("config", "G-HS582VQYJJ");
+	</script>
 	<Header rightMenu navData={nav} slot="header">
 		<span slot="logo">
 			<!-- <Logo /> -->
