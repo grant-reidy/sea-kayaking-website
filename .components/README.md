@@ -1,23 +1,3 @@
-[![npm version](https://badge.fury.io/js/@littlesticks%2Fodyssey-theme-components.svg)](https://badge.fury.io/js/@littlesticks%2Fodyssey-theme-components)
-
-# Odyssey Theme Components
-
-## Install 
-
-```bash
-npm install --save-dev @littlesticks/odyssey-theme-components
-```
-
-## Demo
-
-View a [Live Demo](https://odyssey-theme.littlesticks.dev/) of the Odyssey Theme to see these components in action. 
-
-Additionally, the source code for that demo is available [here](https://github.com/littlesticks/odyssey-theme).
-
-## Components
-
-All of the Astro components are available under a single package of `@littlesticks/odyssey-theme-components` for the sake of simplicity in maintenance and usage. However, you can view the source of each individual component with the links below.
-
 | Components                                                                          |
 | ------------------------------------------------------------------------------------|
 | [BlogPostPreview](blog/BlogPostPreview.astro)                   |
