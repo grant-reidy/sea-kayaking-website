@@ -12,7 +12,7 @@ export default defineConfig({
   // Your public domain, e.g.: https://my-site.dev/. Used to generate sitemaps and canonical URLs.
   sitemap: true,
   // Generate sitemap (set to "false" to disable)
-  integrations: [sitemap(), mdx(), image(), lit(), partytown({config: {forward: ["dataLayer.push"]}})],
+  integrations: [robotsTxt(),sitemap(), mdx(), image(), lit(), partytown({config: {forward: ["dataLayer.push"]}})],
   // This is for the astro-icon package. You can find more about the package here: https://www.npmjs.com/package/astro-icon
   vite: {
     ssr: {
