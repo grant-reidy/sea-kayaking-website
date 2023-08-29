@@ -21,5 +21,6 @@ Before you begin, ensure that you have the following tools installed on your com
 2. **Install the node modules:**
 
    ```sh
-   cd theme/node_modules
+   cd theme
    npm install
+   npm start
