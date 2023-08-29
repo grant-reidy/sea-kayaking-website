@@ -31,3 +31,4 @@ Before you begin, ensure that you have the following tools installed on your com
 ## Maintainers
 
 Peoples just submit a pull request if you update any of the pages and stuff. I'll get y'all stitutated to use the website.
+Image website icons are in the pptx file.
