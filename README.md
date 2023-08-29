@@ -18,9 +18,8 @@ Before you begin, ensure that you have the following tools installed on your com
    ```sh
    git clone https://github.com/grant-reidy/sea-kayaking-website.git
 
-2. **Clone the Repository:**
-
-   Open your terminal and navigate to the directory where you want to clone the website repository.
+2. **Install the node modules:**
 
    ```sh
    cd theme/node_modules
+   npm install
