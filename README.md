@@ -24,3 +24,6 @@ Before you begin, ensure that you have the following tools installed on your com
    cd theme
    npm install
    npm start
+
+3. **Open the website:**
+   https://localhost:3000
