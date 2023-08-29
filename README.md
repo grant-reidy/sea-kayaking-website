@@ -16,4 +16,4 @@ Before you begin, ensure that you have the following tools installed on your com
    Open your terminal and navigate to the directory where you want to clone the website repository.
 
    ```sh
-   cd path/to/your/directory
+   git clone https://github.com/grant-reidy/sea-kayaking-website.git)https://github.com/grant-reidy/sea-kayaking-website.git
