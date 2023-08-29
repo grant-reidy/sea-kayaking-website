@@ -27,3 +27,7 @@ Before you begin, ensure that you have the following tools installed on your com
 
 3. **Open the website:**
    https://localhost:3000
+
+## Maintainers
+
+Peoples just submit a pull request if you update any of the pages and stuff. I'll get y'all stitutated to use the website.
