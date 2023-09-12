@@ -32,3 +32,6 @@ Before you begin, ensure that you have the following tools installed on your com
 
 Peoples just submit a pull request if you update any of the pages and stuff. I'll get y'all stitutated to use the website.
 Image website icons are in the pptx file.
+
+## Website Updates
+When you push to main it'll automatically update the webstie.
