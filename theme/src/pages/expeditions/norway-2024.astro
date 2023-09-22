@@ -1,0 +1,129 @@
+---
+import {Icon} from 'astro-icon'
+import {
+  AnnouncementBar,
+	Button,
+	Container,
+	CustomerQuoteSection,
+	ThreeColumnTextSection,
+	YouTubeEmbedSection,
+  StickyTextImageSection,
+  CtaCardSection
+} from '@littlesticks/odyssey-theme-components';
+import MapCard from "../../components/sections/heros/MapCard.astro"
+import FeatureCard from "../../components/sections/heros/FeatureCard.astro"
+import Layout from '../../layouts/Page.astro';
+import TextAndImageHero from '../../components/sections/heros/TextAndImageHero.astro';
+
+const seo = {
+	title: 'Norway 2024 | Sea Kayaking',
+	description: 'Sea Kayaking expeditions open to sea kayaking staff',
+};
+---
+
+<Layout seo={seo} >
+	<TextAndImageHero reversed>
+		<div slot="text-container">
+			<h1>Norway 2024</h1>
+			<p>Eleven days including paddling, hiking and camping in Central Norway.</p>
+		</div>
+		<div slot="btns-container">
+			<!-- <Button href="/theme/get-started" customIcon
+				>Get Started <Fragment slot="icon">
+          <Icon name="ic:baseline-chevron-right"/>
+        </Fragment></Button
+			> -->
+		</div>
+		<picture slot="image-container">
+			<img
+				src="/assets/images/home/expeditions/greenland/greenland-main-cover.png"
+				alt="Greenland Cover"
+				id="home-hero-image"
+			/>
+		</picture>
+	</TextAndImageHero>
+  <StickyTextImageSection>
+    <div slot="text-container">
+		<h2>About</h2>
+		<p>
+			Taylor, write something long and nicely formatted to go here.
+		</p>
+		<FeatureCard
+					imgSrc="/assets/images/home/expeditions/greenland/greenland-tents"
+					title="Greenland Tents"
+				>
+		</FeatureCard>
+		<br>
+		<h2>Team</h2>
+		<p>We selected individuals who possess the necessary physical fitness, commitment to the outdoors,
+			and ability to handle the potentially challenging weather and environmental conditions possibly 
+			encountered on the expedition. Training and preparedness are essential. Along with regular training trips,
+			educational opportunties were made available on chart reading, cold weather survival, and first aid.</p>
+		<StickyTextImageSection>
+			<div slot="text-container">
+				<h2>Taylor Sherwood</h2>
+				<h4>Expedition Leader</h4>
+				<p>BE Civil Engineering <br>
+					BA Spanish</p>
+				<p><b>Hometown:</b><br>Milledgeville, Georgia <br></p>
+			</div>
+			<picture slot="image-container">
+				<img
+				src="/assets/images/about/sherwood-headshot-2.png"
+				alt="Taylor Sherwood Greenland"
+				loading="lazy"
+				/>
+			  </picture>
+		</StickyTextImageSection>
+		<StickyTextImageSection>
+			<div slot="text-container">
+				<h2>Grant Reidy</h2>
+				<h4>Expedition Leader</h4>
+				<p>BS Computer Science<br></p>
+				<p><b>Hometown:</b><br>Jacksonville, Florida<br></p>
+			</div>
+			<picture slot="image-container">
+				<img
+				src="/assets/images/about/reidy-headshot.png"
+				alt="Grant Reidy"
+				loading="lazy"
+				/>
+			  </picture>
+		</StickyTextImageSection>
+		<StickyTextImageSection>
+			<div slot="text-container">
+				<h2>John Traendly</h2>
+				<h4>Mentor</h4>
+				<p>BE Mechanical Engineering<br>MS Industrial Engineering</p>
+				<p><b>Hometown:</b><br>Atlanta, Georiga<br></p>
+			</div>
+			<picture slot="image-container">
+				<img
+				src="/assets/images/about/traendly-headshot.png"
+				alt="Grant Reidy"
+				loading="lazy"
+				/>
+			  </picture>
+		</StickyTextImageSection>
+		<!-- <FeatureCard
+					imgSrc="/assets/images/home/expeditions/greenland/greenland-travel"
+					title="Greenland Travel"
+				>
+		</FeatureCard> -->
+    </div>
+     <picture slot="image-container">
+		
+		<MapCard title="Tiilerilaaq"
+		href="https://api.mapbox.com/styles/v1/greidy3/cle90p4ml000j01nxqdu689tp.html?title=false&access_token=pk.eyJ1IjoiZ3JlaWR5MyIsImEiOiJjbGUwbmt6YTQxY3JhM3FtamVkZTcxZ3NmIn0.RN-kwQzvocsDqJL9N71Bsg&zoomwheel=false#8.69/65.8893/-38.1811">
+		</MapCard>
+    </picture>
+  </StickyTextImageSection>
+  <YouTubeEmbedSection url="https://www.youtube.com/watch?v=d8Xl7kPA-5k" rounded />
+  <br>
+	
+	
+
+  
+
+</Layout>
+
