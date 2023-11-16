@@ -37,6 +37,10 @@ export const footerLists = [
 		title: 'Expeditions',
 		items: [
 			{
+				title: 'Norway 2024',
+				slug: '/expeditions/norway-2024',
+			},
+			{
 				title: 'Antarctica 2023',
 				slug: '/expeditions/antarctica-2023',
 			},
@@ -47,18 +51,6 @@ export const footerLists = [
 			{
 				title: 'British Columbia',
 				slug: '/expedtiions/british-columbia',
-			},
-			{
-				title: 'Chile 2019',
-				slug: '/expedtiions/chile-2019',
-			},
-			{
-				title: 'Antarctica 2018',
-				slug: '/expeditions/antarctica-2018'
-			},
-			{
-				title: 'Costa Rica',
-				slug: '/expeditions/costa-rica'
 			}
 		],
 	},
