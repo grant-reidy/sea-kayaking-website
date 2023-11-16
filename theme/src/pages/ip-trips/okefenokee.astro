@@ -1,69 +1,82 @@
 ---
 import {Icon} from 'astro-icon'
+
 import {
   AnnouncementBar,
-	Button,
-	Container,
-	CustomerQuoteSection,
-	ThreeColumnTextSection,
-	YouTubeEmbedSection,
+  Button,
+  Container,
+  CustomerQuoteSection,
+  ThreeColumnTextSection,
+  YouTubeEmbedSection,
   StickyTextImageSection,
   CtaCardSection
 } from '@littlesticks/odyssey-theme-components';
+
 import MapCard from "../../components/sections/heros/MapCard.astro"
+
 import FeatureCard from "../../components/sections/heros/FeatureCard.astro"
+
 import Layout from '../../layouts/Page.astro';
+
 import TextAndImageHero from '../../components/sections/heros/TextAndImageHero.astro';
 
 const seo = {
-	title: 'Okefenokee | Sea Kayaking',
-	description: 'Sea Kayaking Okefenokee IP trip',
+  title: 'Okefenokee | Sea Kayaking',
+  description: 'Sea Kayaking Okefenokee IP trip',
 };
 ---
 
-<Layout seo={seo} >
-	<CtaCardSection background="var(--theme-primary-hover)" color="var(--theme-on-primary)">
-		<h3>Find more information about IP trips on the official CRC website using the link below.</h3>
-		<Button href="https://crc.gatech.edu/outdoor/adventure-trips/sea-kayaking" customIcon>Learn More
-			<Fragment slot="icon">
-			  <Icon name="ic:baseline-launch" />
-			</Fragment>
-		</Button>
-	</CtaCardSection>
-  <StickyTextImageSection>
-    <div slot="text-container">
-		<h2>Okefenokee Swamp</h2>
-		<p>
-			Taylor, write something long and nicely formatted to go here.
-		</p>
-		<FeatureCard
-					imgSrc="/assets/images/home/ip-trips/okefenokee/main_alligator"
-					title="Okefenokee"
-				>
-		</FeatureCard>
-		<br>
-		<h2>More Information</h2>
-		<p></p>
-		
-		<!-- <FeatureCard
-					imgSrc="/assets/images/home/expeditions/greenland/greenland-travel"
-					title="Greenland Travel"
-				>
-		</FeatureCard> -->
-    </div>
-     <picture slot="image-container">
-		
-		<MapCard title="Okefenokee Swamp"
-		href="https://api.mapbox.com/styles/v1/greidy3/cllwpvtwy01cc01qi0vigg6i7.html?title=false&access_token=pk.eyJ1IjoiZ3JlaWR5MyIsImEiOiJjbGUwbmt6YTQxY3JhM3FtamVkZTcxZ3NmIn0.RN-kwQzvocsDqJL9N71Bsg&zoomwheel=false#11.75/30.797/-82.3094">
-		</MapCard>
-    </picture>
-	
-  </StickyTextImageSection>
-  
-	
-	
+<Layout seo={seo}>
 
-  
+<CtaCardSection background="var(--theme-primary-hover)" color="var(--theme-on-primary)">
+  <h3>Find more information about IP trips on the official CRC website using the link below.</h3>
+
+  <Button href="https://crc.gatech.edu/outdoor/adventure-trips/sea-kayaking" customIcon>Learn More
+    <Fragment slot="icon">
+      <Icon name="ic:baseline-launch" />
+    </Fragment>
+  </Button>
+</CtaCardSection>
+
+<StickyTextImageSection>
+  <div slot="text-container">
+    <h2>Okefenokee Swamp</h2>
+
+    <p>
+      An opportunity to paddle the water trails in the Okefenokee swamp and the nearby Suwannee River. The trip includes
+      amazing scenery and lots of wildlife, including alligators, deer, raccoons, snakes, turtles, Great Blue herons, Little Blue Herons,
+      Egrets, Ibis, Osprey and wild turkeys. Paddling mileage depends on the trails selected, group interests and water levels in the swamp. Options
+      include the Red Trail (12 - 16 miles), the Narrows (8 miles), Billy's Island (5 miles) and the Suwannee River (17 miles with current assist).
+      Past total trip mileage has varied from 35 to 40 miles.
+    </p>
+
+    <h2>Trip Details</h2>
+
+    <ul>
+      <li><strong>When:</strong> Offered during Spring semester break, beginning about 8:00 am on a Wednesday and ending about 7:00 pm on a Saturday.</li>
+
+      <li><strong>Prerequisites:</strong> FoK I and FoK II, or SK Overnight.</li>
+      
+      <li><strong>Registrations:</strong> Registrations open the first day of the semester, if the trip is being offered, and close on the Friday before the trip begins.</li>
+
+      <li><strong>Capacity:</strong> 12 participants plus Sea Kayaking staff.</li>
+
+      <li><strong>Location:</strong> Okefenokee National Wildlife Refuge in south Georgia.</li>
+    </ul>
+
+    <FeatureCard
+	imgSrc="/assets/images/home/ip-trips/okefenokee/main_alligator"
+	title="Okefenokee Swamp Alligator"
+>
+	</FeatureCard>
+
+  </div>
+
+  <picture slot="image-container">
+    <MapCard title="Okefenokee Swamp"
+      href="https://api.mapbox.com/styles/v1/greidy3/cllwpvtwy01cc01qi0vigg6i7.html?title=false&access_token=pk.eyJ1IjoiZ3JlaWR5MyIsImEiOiJjbGUwbmt6YTQxY3JhM3FtamVkZTcxZ3NmIn0.RN-kwQzvocsDqJL9N71Bsg&zoomwheel=false#11.75/30.797/-82.3094">
+    </MapCard>
+  </picture>
+</StickyTextImageSection>
 
 </Layout>
-

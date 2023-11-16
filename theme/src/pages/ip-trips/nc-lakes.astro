@@ -1,69 +1,79 @@
 ---
 import {Icon} from 'astro-icon'
+
 import {
   AnnouncementBar,
-	Button,
-	Container,
-	CustomerQuoteSection,
-	ThreeColumnTextSection,
-	YouTubeEmbedSection,
+  Button,
+  Container,
+  CustomerQuoteSection,
+  ThreeColumnTextSection,
+  YouTubeEmbedSection,
   StickyTextImageSection,
   CtaCardSection
 } from '@littlesticks/odyssey-theme-components';
+
 import MapCard from "../../components/sections/heros/MapCard.astro"
+
 import FeatureCard from "../../components/sections/heros/FeatureCard.astro"
+
 import Layout from '../../layouts/Page.astro';
+
 import TextAndImageHero from '../../components/sections/heros/TextAndImageHero.astro';
 
 const seo = {
-	title: 'NC Lakes | Sea Kayaking',
-	description: 'Sea Kayaking NC Lakes IP trip',
+  title: 'NC Lakes | Sea Kayaking',
+  description: 'Sea Kayaking NC Lakes IP trip',
 };
 ---
 
-<Layout seo={seo} >
-	<CtaCardSection background="var(--theme-primary-hover)" color="var(--theme-on-primary)">
-		<h3>Find more information about IP trips on the official CRC website using the link below.</h3>
-		<Button href="https://crc.gatech.edu/outdoor/adventure-trips/sea-kayaking" customIcon>Learn More
-			<Fragment slot="icon">
-			  <Icon name="ic:baseline-launch" />
-			</Fragment>
-		</Button>
-	</CtaCardSection>
-  <StickyTextImageSection>
-    <div slot="text-container">
-		<h2>North Carolina Lakes</h2>
-		<p>
-			Taylor, write something long and nicely formatted to go here.
-		</p>
-		<FeatureCard
-					imgSrc="/assets/images/home/ip-trips/nc-lakes/nc_lakes_main"
-					title="NC Lakes"
-				>
-		</FeatureCard>
-		<br>
-		<h2>More Information</h2>
-		<p></p>
-		
-		<!-- <FeatureCard
-					imgSrc="/assets/images/home/expeditions/greenland/greenland-travel"
-					title="Greenland Travel"
-				>
-		</FeatureCard> -->
-    </div>
-     <picture slot="image-container">
-		
-		<MapCard title="Fontana Lake"
-		href="https://api.mapbox.com/styles/v1/greidy3/cllwp8d9y019701ma45uf7pz9.html?title=false&access_token=pk.eyJ1IjoiZ3JlaWR5MyIsImEiOiJjbGUwbmt6YTQxY3JhM3FtamVkZTcxZ3NmIn0.RN-kwQzvocsDqJL9N71Bsg&zoomwheel=false#12.71/35.43137/-83.63644">
-		</MapCard>
-    </picture>
-	
-  </StickyTextImageSection>
-  
-	
-	
+<Layout seo={seo}>
 
+<CtaCardSection background="var(--theme-primary-hover)" color="var(--theme-on-primary)">
+  <h3>Find more information about IP trips on the official CRC website using the link below.</h3>
+
+  <Button href="https://crc.gatech.edu/outdoor/adventure-trips/sea-kayaking" customIcon>Learn More
+    <Fragment slot="icon">
+      <Icon name="ic:baseline-launch" />
+    </Fragment>
+  </Button>
+</CtaCardSection>
+
+<StickyTextImageSection>
+  <div slot="text-container">
+    <h2>North Carolina Lakes</h2>
+
+    <p>
+      An opportunity to paddle three remote mountain lakes — Lakes Fontana, Cheoah and Calderwood. The lakes are bordered on the 
+      north by the Smoky Mountains National Park and on the south by the Nantahala National Forest. Lodging is in a cottage or established
+      campground. Paddling mileage on Fontana is 11. Paddling mileage on Cheoah can be up to 19 (dam to dam), but is usually 13 to 15. 
+      Paddling mileage on Calderwood can be up to 15 (dam to dam), but may be 12 to 13. Mileage is dependent on group interests and weather.
+    </p>
+
+    <h2>Trip Details</h2>
+
+    <ul>
+      <li><strong>When:</strong> Offered during the Fall semester break, beginning about 7:00 am on a Saturday and ending about 8:00 pm on a Monday. There is no Monday evening class.</li>
+      
+      <li><strong>Prerequisites:</strong> FoK I and FoK II, or SK Overnight.</li>
+      
+      <li><strong>Registrations:</strong> Registrations open the first day of the semester, if the trip is being offered, and close on the Wednesday before the trip begins.</li>
+      
+      <li><strong>Capacity:</strong> 12 participants plus Sea Kayaking staff.</li>
+      
+      <li><strong>Location:</strong> Western North Carolina</li>
+    </ul>
+	<FeatureCard
+	imgSrc="/assets/images/home/ip-trips/nc-lakes/nc_lakes_main"
+	title="North Carolina Lakes"
+>
+</FeatureCard>
+  </div>
   
+  <picture slot="image-container">
+    <MapCard title="Fontana Lake" 
+      href="https://api.mapbox.com/styles/v1/greidy3/cllwp8d9y019701ma45uf7pz9.html?title=false&access_token=pk.eyJ1IjoiZ3JlaWR5MyIsImEiOiJjbGUwbmt6YTQxY3JhM3FtamVkZTcxZ3NmIn0.RN-kwQzvocsDqJL9N71Bsg&zoomwheel=false#12.71/35.43137/-83.63644">
+    </MapCard>
+  </picture>
+</StickyTextImageSection>
 
 </Layout>
-
