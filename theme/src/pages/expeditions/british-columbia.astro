@@ -1,0 +1,174 @@
+---
+import {Icon} from 'astro-icon'
+import {
+  AnnouncementBar,
+	Button,
+	Container,
+	CustomerQuoteSection,
+	ThreeColumnTextSection,
+	YouTubeEmbedSection,
+  StickyTextImageSection,
+  CtaCardSection
+} from '@littlesticks/odyssey-theme-components';
+import MapCard from "../../components/sections/heros/MapCard.astro"
+import FeatureCard from "../../components/sections/heros/FeatureCard.astro"
+import Layout from '../../layouts/Page.astro';
+import TextAndImageHero from '../../components/sections/heros/TextAndImageHero.astro';
+
+const seo = {
+	title: 'British Columbia 2022 | Sea Kayaking',
+	description: 'Sea Kayaking expedition along the BC coast open to Georgia Tech sea kayaking instructors',
+};
+---
+
+<Layout seo={seo} >
+	<TextAndImageHero reversed>
+		<div slot="text-container">
+			<h1>British Columbia 2022</h1>
+			<p>Nine days of paddling and primitive camping on the eastern coast of Vancouver Island and the western coast of British Columbia, Canada.</p>
+		</div>
+		<div slot="btns-container">
+			<!-- <Button href="/theme/get-started" customIcon
+				>Get Started <Fragment slot="icon">
+          <Icon name="ic:baseline-chevron-right"/>
+        </Fragment></Button
+			> -->
+		</div>
+		<picture slot="image-container">
+			<img 
+				src="/assets/images/home/expeditions/british_columbia/bc-main-cover.png"
+				alt="British Columbia Cover"
+				id="home-hero-image"
+			/>
+		</picture>
+	</TextAndImageHero>
+
+  <StickyTextImageSection>
+    <div slot="text-container">
+		<h2>About</h2>
+		<p>The <b>British Columbia 2022</b> expedition was a <i>nine day</i> sea kayaking trip that took place in <b>early August 2022</b>. The trip included paddling and primitive camping along the eastern coast of <b>Vancouver Island</b> and the western coast of <b>British Columbia, Canada</b>. The team of <b>eight</b>, comprised of Georgia Tech ORGT sea kayaking instructors and staff, traveled primarily by kayak and camped at multiple locations along the route. They also hiked to explore areas near campsites when possible.</p>
+		
+		<p>The total paddling distance was around <b>130 miles</b> at an average pace of <b>3 mph</b> with fully loaded kayaks. Average temperatures were <b>10°C to 20°C (50°F to 68°F)</b>. The expedition provided leadership opportunities for ORGT staff and helped foster collaboration through months of planning and preparation.</p>
+
+		<br>
+
+		<h2>Team</h2>
+		<p>We selected experienced ORGT sea kayaking instructors and staff capable of handling the route's potential weather and tidal currents. Extensive training and preparation were required.</p>
+
+		<StickyTextImageSection>
+			<div slot="text-container">
+				<h2>John Traendly</h2>
+				<h4>Mentor</h4>
+				<p>BE Mechanical Engineering<br>MS Industrial Engineering</p>
+				<p><b>Hometown:</b><br>Symrna, Georgia</p>
+			</div>
+			<picture slot="image-container">
+				<img
+					src="/assets/images/about/traendly-headshot.png"
+					alt="John Traendly"
+					loading="lazy"
+				/>
+			</picture>
+		</StickyTextImageSection>
+
+		<StickyTextImageSection>
+			<div slot="text-container">
+				<h2>Ellie Wangerin</h2>
+				<p>ORGT Sea Kayaking Trip Leader</p>
+				<p><b>Hometown:</b><br>Milledgeville, Georgia</p>
+			</div>
+			<picture slot="image-container">
+				<img
+					src="/assets/images/about/ellie-headshot.png"
+					alt="Ellie Wangerin"
+					loading="lazy" 
+				/>
+			</picture>
+		</StickyTextImageSection>
+		
+		<StickyTextImageSection>
+			<div slot="text-container">
+				<h2>Jackson Moody</h2>
+				<p>ORGT Sea Kayaking Instructor</p>
+				<p><b>Hometown:</b><br>Memphis, Tennessee</p>
+			</div>
+			<picture slot="image-container">
+				<img
+					src="/assets/images/about/moody-headshot.png"
+					alt="Jackson Moody"
+					loading="lazy"
+				/>
+			</picture>
+		</StickyTextImageSection>
+
+		<StickyTextImageSection>
+			<div slot="text-container">
+				<h2>Cynthia Lu</h2>
+				<p>ORGT Sea Kayaking Instructor</p>
+				<p><b>Hometown:</b><br>Taipei, Taiwan</p>
+			</div>
+			<picture slot="image-container">
+				<img
+					src="/assets/images/about/cynthia-headshot.png" 
+					alt="Cynthia Lu"
+					loading="lazy"
+				/>
+			</picture>
+		</StickyTextImageSection>
+
+		<StickyTextImageSection>
+			<div slot="text-container">
+				<h2>Grant Reidy</h2>
+				<p>ORGT Sea Kayaking IiT</p>
+				<p><b>Hometown:</b><br>Jacksonville, Florida</p>
+			</div>
+			<picture slot="image-container">
+				<img
+					src="/assets/images/about/reidy-headshot.png"
+					alt="Grant Reidy"
+					loading="lazy"
+				/>
+			</picture>
+		</StickyTextImageSection>
+
+		<StickyTextImageSection>
+			<div slot="text-container">
+				<h2>Jonathan Nativ</h2>
+				<p>ORGT Sea Kayaking IiT</p>
+				<p><b>Hometown:</b><br>Palo Alto, California</p>
+			</div>
+			<picture slot="image-container">
+				<img
+					src="/assets/images/about/nativ-headshot.png"
+					alt="Jonathan Nativ"
+					loading="lazy" 
+				/>
+			</picture>
+		</StickyTextImageSection>
+
+		<StickyTextImageSection>
+			<div slot="text-container">
+				<h2>Todd Hyatt</h2>
+				<p>Mentor</p>
+				<p><b>Hometown:</b><br>Nelson, British Columbia</p>
+			</div>
+			<picture slot="image-container">
+				<img
+					src="/assets/images/about/hyatt-headshot.png"
+					alt="Todd Hyatt"
+					loading="lazy"
+				/>
+			</picture>
+		</StickyTextImageSection>
+
+    </div>
+     <picture slot="image-container">
+		
+		<MapCard title="Johnstone Strait"
+		href="https://api.mapbox.com/styles/v1/greidy3/cle90p4ml000j01nxqdu689tp.html?title=false&access_token=pk.eyJ1IjoiZ3JlaWR5MyIsImEiOiJjbGUwbmt6YTQxY3JhM3FtamVkZTcxZ3NmIn0.RN-kwQzvocsDqJL9N71Bsg&zoomwheel=false#10.95/50.6455/-126.2988">
+		</MapCard>
+    </picture>
+  </StickyTextImageSection>
+  <br>
+
+</Layout>
