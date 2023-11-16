@@ -50,7 +50,7 @@ export const footerLists = [
 			},
 			{
 				title: 'British Columbia',
-				slug: '/expedtiions/british-columbia',
+				slug: '/expeditions/british-columbia',
 			}
 		],
 	},
