@@ -1,0 +1,77 @@
+---
+import {Icon} from 'astro-icon'
+import {
+  AnnouncementBar,
+  Button,
+  Container,
+  CustomerQuoteSection,
+  ThreeColumnTextSection,
+  YouTubeEmbedSection,
+  StickyTextImageSection,
+  CtaCardSection
+} from '@littlesticks/odyssey-theme-components';
+
+import MapCard from "../../components/sections/heros/MapCard.astro"
+
+import FeatureCard from "../../components/sections/heros/FeatureCard.astro"
+
+import Layout from '../../layouts/Page.astro';
+
+const seo = {
+  title: 'Sea Kayaking Overnight | Sea Kayaking',
+  description: 'Sea Kayaking Overnight IP trip',
+};
+---
+
+<Layout seo={seo}>
+  <CtaCardSection background="var(--theme-primary-hover)" color="var(--theme-on-primary)">
+    <h3>Find more information about IP trips on the official CRC website using the link below.</h3>
+  
+    <Button href="https://crc.gatech.edu/outdoor/adventure-trips/sea-kayaking" customIcon>Learn More
+      <Fragment slot="icon">
+        <Icon name="ic:baseline-launch" />
+      </Fragment>
+    </Button>
+  </CtaCardSection>
+
+  <StickyTextImageSection>
+    <div slot="text-container">
+      <h2>Sea Kayaking Overnight</h2>
+      
+      <p>
+        A two day kayaking trip on a lake in a remote wilderness setting with one night of primitive camping. The trip is self-sustaining 
+        in that all food, water, camping equipment and other gear are carried in the kayaks. The distance paddled is approximately 4 to 5 
+        miles the first day and 10 to 12 miles the second day.  
+      </p>
+      
+      <h2>Trip Details</h2>
+
+      <ul>
+        <li><strong>When:</strong> A combined class and pool session is held on a Monday evening from 6:30 pm to 10:30 pm, followed by a two day lake session. The trip begins on a Saturday about 7:00 am and ends on a Sunday about 7:00 pm.</li>
+      
+        <li><strong>Prerequisites:</strong> Must be able to swim 100 meters and tread water for 60 seconds without a personal floatation device (PFD). No previous kayaking experience required. The swim test is covered during the Monday evening pool session.</li>
+        
+        <li><strong>Registrations:</strong> Registrations open the first day of the semester and close on the Tuesday before the classroom session begins.</li>
+        
+        <li><strong>Capacity:</strong> 12 participants plus Sea Kayaking staff.</li>
+      
+        <li><strong>Locations:</strong> Lake within a 3 hour drive of campus -- Lake Jocassee or Carter's Lake.</li>
+      </ul>
+      <br>
+      <FeatureCard
+        imgSrc="/assets/images/home/ip-trips/lake-jocassee/lake-jocassee" 
+        title="Sea Kayaking Overnight"
+      />
+    
+    </div>
+
+    <picture slot="image-container">
+      <MapCard 
+        title="Lake Jocassee"
+        href="https://api.mapbox.com/styles/v1/greidy3/cllwp8d9y019701ma45uf7pz9.html?title=false&access_token=pk.eyJ1IjoiZ3JlaWR5MyIsImEiOiJjbGUwbmt6YTQxY3JhM3FtamVkZTcxZ3NmIn0.RN-kwQzvocsDqJL9N71Bsg&zoomwheel=false#10.4/35.08461/-82.90573">
+        </MapCard>
+      </picture>
+
+  </StickyTextImageSection>
+
+</Layout>
