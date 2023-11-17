@@ -1,8 +1,18 @@
 ---
+import {Icon} from 'astro-icon'
 import Layout from '../../layouts/Page.astro';
-import { StickyTextImageSection } from '@littlesticks/odyssey-theme-components';
 import MapCard from '../../components/sections/heros/MapCard.astro';
 import FeatureCard from '../../components/sections/heros/FeatureCard.astro';
+import {
+  AnnouncementBar,
+  Button,
+  Container,
+  CustomerQuoteSection,
+  ThreeColumnTextSection,
+  YouTubeEmbedSection,
+  StickyTextImageSection,
+  CtaCardSection
+} from '@littlesticks/odyssey-theme-components';
 
 const seo = {
   title: 'Coastal Surfing Adventure | Sea Kayaking',
@@ -11,6 +21,15 @@ const seo = {
 ---
 
 <Layout seo={seo}>
+  <CtaCardSection background="var(--theme-primary-hover)" color="var(--theme-on-primary)">
+    <h3>Find more information about IP trips on the official CRC website using the link below.</h3>
+  
+    <Button href="https://crc.gatech.edu/outdoor/adventure-trips/sea-kayaking" customIcon>Learn More
+      <Fragment slot="icon">
+        <Icon name="ic:baseline-launch" />
+      </Fragment>
+    </Button>
+  </CtaCardSection>
 
   <StickyTextImageSection>
     <div slot="text-container">
