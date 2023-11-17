@@ -1,0 +1,82 @@
+---
+import {Icon} from 'astro-icon'
+import {
+  Button,
+  Container,
+  CustomerQuoteSection,
+  ThreeColumnTextSection,
+  YouTubeEmbedSection,
+  StickyTextImageSection,
+  CtaCardSection
+} from '@littlesticks/odyssey-theme-components';
+import MapCard from "../../components/sections/heros/MapCard.astro"
+import FeatureCard from "../../components/sections/heros/FeatureCard.astro"
+import Layout from '../../layouts/Page.astro';
+import TextAndImageHero from '../../components/sections/heros/TextAndImageHero.astro';
+
+const seo = {
+  title: 'Norway 2017 | Sea Kayaking',
+  description: 'Sea Kayaking expedition in Central Norway',
+};
+---
+
+<Layout seo={seo} >
+  <TextAndImageHero reversed>
+    <div slot="text-container">
+      <h1>Norway 2017</h1>
+      <p>Eleven days including paddling, hiking and camping in Central Norway.</p>
+    </div>
+    <div slot="btns-container">
+      <!-- <Button href="/theme/get-started" customIcon
+        >Get Started <Fragment slot="icon">
+          <Icon name="ic:baseline-chevron-right"/>
+        </Fragment></Button
+      > -->
+    </div>
+    <picture slot="image-container">
+      <img
+        src="/assets/images/home/expeditions/norway-2024/norway-cover-main.png"
+        alt="Norway Cover"
+        id="home-hero-image"
+      />
+    </picture>
+  </TextAndImageHero>
+  <StickyTextImageSection>
+    <div slot="text-container">
+    <h2>About</h2>
+      <p> The <b>Norway expedition</b> is an 11-day sea kayaking trip from August 7-19, 2017. The route explored the fjords of central Norway, including Aurlandsfjorden, Nærøyfjord, Sognefjorden, Fjærlandsfjord and Sogndalsfjorden. </p> <p> The expedition launched from Flåm and paddled through scenic villages like Gudvangen, Balestrand, and Sogndal. There were opportunities for <i>hiking, camping</i>, and exploring small towns along the route. The total paddling distance was around <b>120 miles</b> over 9 days of paddling. </p> <p> The team consisted of <b>9 paddlers</b> and <b>1 mentor</b>, all with sea kayaking experience, wilderness medical training, and the necessary fitness and skills to handle the potential weather and conditions. There were opportunities for <i>training</i> and <i>preparation</i> prior to departure. </p>
+      
+      <FeatureCard
+          imgSrc="/assets/images/home/expeditions/norway-2024/norway-main"
+          title="Norway Fjord Kayaking"
+        >
+      </FeatureCard>
+      <br>
+      <h2>Team</h2>
+      <p>The 2017 team:</p>
+      <ul>
+        <li>Laura O'Connell</li>
+        <li>Liz Horton</li> 
+        <li>Miller Andrews</li>
+        <li>Ronnie Ludwin</li>
+        <li>Joshua Barua</li>
+        <li>Rebecca Bevers</li>
+        <li>Jack Amoss</li>
+        <li>Todd Hyatt</li>
+        <li>John Traendly (Mentor)</li>
+      </ul>
+    </div>
+     <picture slot="image-container">
+      
+      <MapCard title="Flåm"
+      href="https://api.mapbox.com/styles/v1/greidy3/clp0bdp9x00vk01qj736k50fy.html?title=false&access_token=pk.eyJ1IjoiZ3JlaWR5MyIsImEiOiJjbGUwbmt6YTQxY3JhM3FtamVkZTcxZ3NmIn0.RN-kwQzvocsDqJL9N71Bsg&zoomwheel=false#9.89/60.986/7.1707">
+      </MapCard>
+    </picture>
+  </StickyTextImageSection>
+  <!-- <YouTubeEmbedSection url="https://www.youtube.com/watch?v=d8Xl7kPA-5k" rounded /> -->
+  <br>
+
+
+  
+
+</Layout>
