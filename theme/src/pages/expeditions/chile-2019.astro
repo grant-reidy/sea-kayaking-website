@@ -1,0 +1,188 @@
+---
+import {Icon} from 'astro-icon'
+import Layout from '../../layouts/Page.astro';
+import TextAndImageHero from '../../components/sections/heros/TextAndImageHero.astro';
+import MapCard from "../../components/sections/heros/MapCard.astro"
+import {
+  StickyTextImageSection
+} from '@littlesticks/odyssey-theme-components';
+
+const seo = {
+  title: 'Chile 2019 | Sea Kayaking',
+  description: 'Sea Kayaking expedition in Patagonia',
+};
+---
+
+<Layout seo={seo}>
+  <TextAndImageHero reversed>
+    <div slot="text-container">
+      <h1>Chile 2019</h1>
+      <p>
+        Twenty-one days of paddling, hiking and camping in Patagonia.
+      </p>
+    </div>
+    <div slot="btns-container">
+      <!-- <Button href="/theme/get-started" customIcon
+        >Get Started <Fragment slot="icon">
+          <Icon name="ic:baseline-chevron-right"/>
+        </Fragment></Button
+      > -->
+    </div>
+    <picture slot="image-container">
+      <img 
+        src="/assets/images/home/expeditions/chile-2019/chile-cover.png"
+        alt="Chile Cover"
+        id="home-hero-image"
+      />
+    </picture>
+  </TextAndImageHero>
+
+  <StickyTextImageSection>
+    <div slot="text-container">
+      <h2>About</h2>
+      
+      <p>
+        The <b>Chile 2019</b> expedition was a <i>twenty-one day</i> sea kayaking, hiking and camping trip in <b>Patagonia, Chile</b> from <b>late December 2018 to mid January 2019</b>.
+      </p>
+      
+      <p>
+        The trip included six days of <b>sea kayaking</b> around the <b>Antarctic Peninsula</b>, four days of <b>kayaking</b> on fjords and rivers near <b>Torres del Paine National Park</b>, and several days of <b>hiking</b> including on <b>Grey Glacier</b>.  
+      </p>
+      
+      <p>
+        The <b>six person team</b> was comprised of <b>Georgia Tech students and alumni</b>. They traveled between locations by plane, boat and bus. The total <b>paddling distance</b> was around <b>160 miles</b>. Average temperatures were <b>35°F to 50°F</b> (-2°C to 10°C).
+      </p>
+
+      <br>
+
+      <h2>Team</h2>
+
+      <p>
+        The expedition team consisted of the following Georgia Tech students and alumni:
+      </p>
+
+      <StickyTextImageSection>
+        <div slot="text-container">
+          <h3>Jack Amoss</h3>
+          <p>
+            Undergraduate Student
+          </p>
+          <p>
+            <b>Hometown:</b><br>
+            Atlanta, Georgia
+          </p>
+        </div>
+        <picture slot="image-container">
+          <img
+            src="https://via.placeholder.com/400"
+            alt="Jack Amoss"
+          />
+        </picture>
+      </StickyTextImageSection>
+
+      <StickyTextImageSection>
+        <div slot="text-container">
+          <h3>Kristine Ferguson</h3>
+          <p>
+            Undergraduate Student
+          </p>
+          <p>
+            <b>Hometown:</b><br>
+            Jasper, Indiana  
+          </p>
+        </div>
+        <picture slot="image-container">
+          <img
+            src="https://via.placeholder.com/400"
+            alt="Kristine Ferguson"
+          />
+        </picture>
+      </StickyTextImageSection>
+
+      <StickyTextImageSection>
+        <div slot="text-container">
+          <h3>Matthew Lemons</h3>
+          <p>
+            Undergraduate Student
+          </p>
+          <p>
+            <b>Hometown:</b><br>
+            Duluth, Georgia
+          </p>
+        </div>
+        <picture slot="image-container">
+          <img 
+            src="https://via.placeholder.com/400"
+            alt="Matthew Lemons" 
+          />
+        </picture>
+      </StickyTextImageSection>
+
+      <StickyTextImageSection>
+        <div slot="text-container">
+          <h3>Jamie Rogers</h3>
+          <p>
+            Undergraduate Student
+          </p>
+          <p>
+            <b>Hometown:</b><br>
+            Savannah, Georgia
+          </p>
+        </div>
+        <picture slot="image-container">
+          <img
+            src="https://via.placeholder.com/400" 
+            alt="Jamie Rogers"
+          />
+        </picture>
+      </StickyTextImageSection>
+
+      <StickyTextImageSection>
+        <div slot="text-container">
+          <h3>Brandon Yuan</h3>
+          <p>
+            Undergraduate Student  
+          </p>
+          <p>
+            <b>Hometown:</b><br>
+            Iowa City, Iowa
+          </p>    
+        </div>
+        <picture slot="image-container">
+          <img
+            src="https://via.placeholder.com/400"
+            alt="Brandon Yuan" 
+          />
+        </picture>
+      </StickyTextImageSection>
+
+      <StickyTextImageSection>
+        <div slot="text-container">
+          <h3>John Traendly</h3>
+          <p>
+            Mentor
+          </p>
+          <p>
+            <b>Hometown:</b><br>
+            Smyrna, Georgia
+          </p>
+        </div>
+        <picture slot="image-container">
+          <img 
+            src="/assets/images/about/traendly-headshot.png"
+            alt="John Traendly"
+          />
+        </picture>
+      </StickyTextImageSection>
+
+    </div>
+    <picture slot="image-container">
+		
+		<MapCard title="Torres del Paine"
+		href="https://api.mapbox.com/styles/v1/greidy3/cle90p4ml000j01nxqdu689tp.html?title=false&access_token=pk.eyJ1IjoiZ3JlaWR5MyIsImEiOiJjbGUwbmt6YTQxY3JhM3FtamVkZTcxZ3NmIn0.RN-kwQzvocsDqJL9N71Bsg&zoomwheel=false#8/-50.9423/-73.4068">
+		</MapCard>
+    </picture>
+  </StickyTextImageSection>
+  
+
+</Layout>
