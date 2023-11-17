@@ -1,0 +1,178 @@
+---
+import Layout from '../../layouts/Page.astro';
+import TextAndImageHero from '../../components/sections/heros/TextAndImageHero.astro';  
+import { StickyTextImageSection } from '@littlesticks/odyssey-theme-components';
+import MapCard from "../../components/sections/heros/MapCard.astro"
+
+const seo = {
+  title: 'Antarctica 2018 | Sea Kayaking',
+  description: 'Sea Kayaking expedition in Antarctica',
+};
+---
+
+<Layout seo={seo}>
+  <TextAndImageHero reversed>
+    <div slot="text-container">
+      <h1>Antarctica 2018</h1> 
+      <p>
+        Nine days of paddling and camping around the Antarctic Peninsula.
+      </p>
+    </div>
+    <div slot="btns-container">
+    </div>
+    <picture slot="image-container">
+      <img 
+        src="/assets/images/home/expeditions/antarctica-2018/antarctica-cover.png" 
+        alt="Antarctica Cover"
+      />
+    </picture>
+  </TextAndImageHero>
+
+  <StickyTextImageSection>
+    <div slot="text-container">
+      <h2>About</h2>
+      
+      <p>
+        The <b>Antarctica 2018</b> expedition was a <i>nine day</i> sea kayaking and camping trip to the <b>Antarctic Peninsula</b> from <b>late December 2018 to early January 2019</b>.  
+      </p>
+      
+      <p>
+        The trip was hosted by <b>Southern Sea Ventures (SSV)</b> and traveled on the <b>Aurora Expeditions</b> ship <i>Polar Pioneer</i>. It included <b>six days</b> of sea kayaking and camping around the Antarctic Peninsula, along with educational lectures and briefings.
+      </p>
+      
+      <p>
+        The <b>five person team</b> was comprised of <b>Georgia Tech students</b>. They flew from Chile to join the SSV trip, paddling and camping when possible. Average temperatures were <b>25°F to 35°F</b> (-4°C to 2°C).  
+      </p>
+
+      <br>
+
+      <h2>Team</h2>
+
+      <p>
+        The expedition team consisted of the following Georgia Tech students:
+      </p>
+
+      <StickyTextImageSection>
+        <div slot="text-container">
+          <h3>Jack Amoss</h3>
+          <p>
+            Undergraduate Student
+          </p>
+          <p>
+            <b>Hometown:</b><br>
+            Atlanta, Georgia
+          </p>
+        </div>
+        <picture slot="image-container">
+          <img
+            src="https://via.placeholder.com/400"
+            alt="Jack Amoss"
+          />
+        </picture>
+      </StickyTextImageSection>
+
+      <StickyTextImageSection>
+        <div slot="text-container">
+          <h3>Kristine Ferguson</h3>
+          <p>
+            Undergraduate Student
+          </p>
+          <p>
+            <b>Hometown:</b><br>
+            Jasper, Indiana  
+          </p>
+        </div>
+        <picture slot="image-container">
+          <img
+            src="https://via.placeholder.com/400"
+            alt="Kristine Ferguson"
+          />
+        </picture>
+      </StickyTextImageSection>
+
+      <StickyTextImageSection>
+        <div slot="text-container">
+          <h3>Matthew Lemons</h3>
+          <p>
+            Undergraduate Student
+          </p>
+          <p>
+            <b>Hometown:</b><br>
+            Duluth, Georgia
+          </p>
+        </div>
+        <picture slot="image-container">
+          <img 
+            src="https://via.placeholder.com/400"
+            alt="Matthew Lemons" 
+          />
+        </picture>
+      </StickyTextImageSection>
+
+      <StickyTextImageSection>
+        <div slot="text-container">
+          <h3>Jamie Rogers</h3>
+          <p>
+            Undergraduate Student
+          </p>
+          <p>
+            <b>Hometown:</b><br>
+            Savannah, Georgia
+          </p>
+        </div>
+        <picture slot="image-container">
+          <img
+            src="https://via.placeholder.com/400" 
+            alt="Jamie Rogers"
+          />
+        </picture>
+      </StickyTextImageSection>
+
+      <StickyTextImageSection>
+        <div slot="text-container">
+          <h3>Brandon Yuan</h3>
+          <p>
+            Undergraduate Student  
+          </p>
+          <p>
+            <b>Hometown:</b><br>
+            Iowa City, Iowa
+          </p>    
+        </div>
+        <picture slot="image-container">
+          <img
+            src="https://via.placeholder.com/400"
+            alt="Brandon Yuan" 
+          />
+        </picture>
+      </StickyTextImageSection>
+
+      <StickyTextImageSection>
+        <div slot="text-container">
+          <h3>John Traendly</h3>
+          <p>
+            Mentor
+          </p>
+          <p>
+            <b>Hometown:</b><br>
+            Smyrna, Georgia
+          </p>
+        </div>
+        <picture slot="image-container">
+          <img 
+            src="/assets/images/about/traendly-headshot.png"
+            alt="John Traendly"
+          />
+        </picture>
+      </StickyTextImageSection>
+
+    </div>
+    <picture slot="image-container">
+		
+      <MapCard title="Antarctic Peninsula"
+      href="https://api.mapbox.com/styles/v1/greidy3/cle81ikeh000z01phlu30oa03.html?title=false&access_token=pk.eyJ1IjoiZ3JlaWR5MyIsImEiOiJjbGUwbmt6YTQxY3JhM3FtamVkZTcxZ3NmIn0.RN-kwQzvocsDqJL9N71Bsg&zoomwheel=false#4.96/-66.33/-61.6/11.2/2">
+      </MapCard>
+      </picture>
+  </StickyTextImageSection>
+
+</Layout>
