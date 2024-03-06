@@ -34,4 +34,4 @@ Peoples just submit a pull request if you update any of the pages and stuff. I'l
 Image website icons are in the pptx file.
 
 ## Website Updates
-When you merge into main it'll automatically update the webstie.
+Make sure you make a new branch, branch protection is enabled for 'main'. When you merge into 'main' it'll automatically update the webstie.
